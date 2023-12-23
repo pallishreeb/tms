@@ -1,4 +1,9 @@
 import { useState } from "react";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 const SearchForm = () => {
   const [showAdvanced, setShowAdvanced] = useState(false);
 
@@ -527,29 +532,55 @@ const SearchForm = () => {
 
             {/* third row */}
             <div className="flex row justify-between text-center px-10 mb-4">
-              <div>
-                <p className="text-sm">
+              <div className="flex items-center">
+                <p className="text-sm text-center">
                   Shipments shown for last
-                  <span className="text-blue-500 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 hover:cursor-pointer">
-                    {" "}
+                  <span className="text-blue-500 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:cursor-pointer ml-1">
                     Last 90 Days
+                  </span>
+                  <span className="text-blue-500 hover:cursor-pointer">
+                    <CalendarMonthIcon
+                      className="ml-1"
+                      style={{ fontSize: 20 }}
+                    />
                   </span>
                 </p>
               </div>
-              <div className="flex justify-between items-center w-3/6 ">
-                <span className="text-blue-500 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 hover:cursor-pointer">
-                  Export to Excel
-                </span>
-                <span className="text-blue-500 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 hover:cursor-pointer">
-                  Clear Fields
-                </span>
-                <span
-                  className="text-blue-500 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 hover:cursor-pointer"
-                  onClick={handleToggleAdvanced}
-                >
-                  {" "}
-                  {showAdvanced ? "Hide Advanced" : "Show Advanced"}
-                </span>
+              <div className="flex justify-between items-center w-7/12 ">
+                <div className="flex items-center space-x-1">
+                  <span className="text-blue-500  hover:cursor-pointer">
+                    <FileDownloadIcon className="w-6 h-6" />
+                  </span>
+                  <span className="text-blue-500 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:cursor-pointer">
+                    Export to Excel
+                  </span>
+                </div>
+
+                <div className="flex items-center space-x-1">
+                  <span className="text-blue-500 hover:cursor-pointer">
+                    <BorderColorIcon className="w-6 h-6" />
+                  </span>
+                  <span className="text-blue-500 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:cursor-pointer">
+                    Clear Fields
+                  </span>
+                </div>
+
+                <div className="flex items-center space-x-1">
+                  <span className="text-blue-500  hover:cursor-pointer mr-1">
+                    {showAdvanced ? (
+                      <VisibilityOffIcon className="w-6 h-6" />
+                    ) : (
+                      <VisibilityIcon className="w-6 h-6" />
+                    )}
+                  </span>
+                  <span
+                    className="text-blue-500 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:cursor-pointer"
+                    onClick={handleToggleAdvanced}
+                  >
+                    {showAdvanced ? "Hide Advanced" : "Show Advanced"}
+                  </span>
+                </div>
+
                 <button className="py-2 px-16 bg-blue-500 rounded text-white">
                   Search
                 </button>
