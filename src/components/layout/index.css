@@ -1,0 +1,22 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+.sideNav-container{
+    position: static;
+    z-index: 2;
+}
+
+.top-nav{
+    height: 60px;
+    align-content: center;
+    align-items: center;
+    background-color: #343a40;
+    box-shadow: 0 4px 7px #0000000f;
+    padding: 7px 20px;
+    position: static;
+}
+
+.content-layout{
+    height: calc(100vh - 60px);
+}
