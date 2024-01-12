@@ -1,23 +1,16 @@
+import SideNavComponent from "./components/navs/SideNav";
 
-import { Outlet } from 'react-router-dom';
-import Header from './components/navs/Header';
-import Footer from './components/navs/Footer';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import SearchForm from './components/SearchForm';
 function App() {
-  console.log("check")
   return (
     <>
-    <ToastContainer />
-    <Header />
-    <SearchForm />
-    <main>
-        <Outlet />
-    </main>
-    <Footer />
-  </>
+      <ToastContainer />
+      <div className="w-screen h-screen bg-slate-800">
+        <SideNavComponent />
+      </div>
+    </>
   );
 }
 

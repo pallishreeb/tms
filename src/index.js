@@ -12,7 +12,7 @@ import {
 import ShipmentsScreen from './screens/shipments/Shipments';
 import AddShipmentsScreen from './screens/shipments/AddShipments';
 import ShipmentDetailsScreen from './screens/shipments/ShipmentDetails';
-
+import { StyledEngineProvider } from '@mui/material/styles';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
@@ -29,9 +29,11 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   <StyledEngineProvider injectFirst>
      <Provider store={store}>
           <RouterProvider router={router} />
       </Provider>
+      </StyledEngineProvider>
   </React.StrictMode>
 );
 
