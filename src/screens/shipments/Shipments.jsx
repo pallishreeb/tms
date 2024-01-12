@@ -109,7 +109,7 @@ const Shipments = () => {
   ];
   
   return (
-    <div>
+    <div >
 
       <SearchForm />
       <DataTable data={data} />
