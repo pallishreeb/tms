@@ -1,4 +1,5 @@
 import SideNavComponent from "./components/navs/SideNav";
+import Shipments from "./screens/shipments/Shipments"
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,8 +9,9 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <div className="w-screen h-screen">
-        <Layout/>
+      <div className="w-screen h-screen mt-2">
+        {/* <Layout/> */}
+        <Shipments/>
       </div>
     </>
   );

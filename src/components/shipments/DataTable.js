@@ -58,6 +58,11 @@ const DataTable = ({ data }) => {
       handleClick: openCheckCallModal,
     },
     {
+      title: "View Activity Log",
+      icon: <FaList />,
+      handleClick: openActivityLogModal,
+    },
+    {
       title: "Truckload Quoting",
       icon: <FaBriefcase />,
       handleClick: () => {},
@@ -67,11 +72,7 @@ const DataTable = ({ data }) => {
       icon: <FaGlobeAmericas />,
       handleClick: () => {},
     },
-    {
-      title: "View Activity Log",
-      icon: <FaList />,
-      handleClick: openActivityLogModal,
-    },
+  
     {
       title: "Send Message",
       icon: <FaEnvelope />,
