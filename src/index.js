@@ -4,34 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
+  BrowserRouter,
 } from 'react-router-dom';
-import ShipmentsScreen from './screens/shipments/Shipments';
-import AddShipmentsScreen from './screens/shipments/AddShipments';
-import ShipmentDetailsScreen from './screens/shipments/ShipmentDetails';
-
+import { StyledEngineProvider } from '@mui/material/styles';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<App />}>
-      <Route index={true} path='/' element={<ShipmentsScreen />} />
-      <Route path='/addshipments' element={<AddShipmentsScreen />} />
-      <Route path='/details' element={<ShipmentDetailsScreen />} />   
-    </Route>
-  )
-);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+   <StyledEngineProvider injectFirst>
      <Provider store={store}>
-          <RouterProvider router={router} />
+      <App/>
       </Provider>
+      </StyledEngineProvider>
+      </BrowserRouter>
   </React.StrictMode>
 );
 

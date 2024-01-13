@@ -1,20 +1,17 @@
+import SideNavComponent from "./components/navs/SideNav";
 
-import { Outlet } from 'react-router-dom';
-import Header from './components/navs/Header';
-import Footer from './components/navs/Footer';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Layout from "./components/layout";
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
-    <ToastContainer />
-    <Header />
-    <main>
-        <Outlet />
-    </main>
-    <Footer />
-  </>
+      <ToastContainer />
+      <div className="w-screen h-screen">
+        <Layout/>
+      </div>
+    </>
   );
 }
 
