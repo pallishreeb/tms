@@ -14,7 +14,7 @@ const SearchForm = () => {
   };
   return (
     <>
-      <div className="flex justify-between w-11/12 mx-auto mb-2">
+      <div className="flex justify-between mb-2">
         <div>
           <h2 className="text-3xl mt-1 font-medium">Shipment Search</h2>
         </div>
@@ -35,7 +35,7 @@ const SearchForm = () => {
           </button>
         </div>
       </div>
-      <div className="rounded border-solid border-2  w-11/12 mx-auto py-6 bg-white">
+      <div className="rounded border-solid border-2  py-6 bg-white">
         <div className="card-body ">
           <form className=" card-text">
             {/* first row */}

@@ -1,14 +1,12 @@
-import React from 'react'
-import SearchForm from '../../../components/SearchForm';
-import DataTable from '../../../components/shipments/DataTable';
+import React from "react";
+import Shipments from "../../../screens/shipments/Shipments";
 
 const LtlSearch = () => {
   return (
     <>
-        <SearchForm/>
-        <DataTable data={[]}/>
+      <Shipments />
     </>
-  )
-}
+  );
+};
 
 export default LtlSearch;
