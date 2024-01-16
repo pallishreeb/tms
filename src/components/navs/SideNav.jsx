@@ -1,12 +1,5 @@
-
 import { Link } from "react-router-dom";
-import {
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-  Collapse,
-} from "@mui/material";
+import { Drawer, List, ListItem, ListItemText, Collapse } from "@mui/material";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import React from "react";
@@ -17,7 +10,7 @@ const SubMenu = () => {
   const handleClick = () => {
     setOpen(!open);
   };
-// will work later
+  // will work later
   const menuItem = [
     {
       id: 1,
@@ -66,16 +59,16 @@ const SubMenu = () => {
 };
 
 const SideNav = () => {
-  const drawerWidth = 240;
+  // const drawerWidth = 240;
 
   return (
     <>
       <Drawer
         sx={{
-          width: drawerWidth,
+          width: "16%",
           flexShrink: 0,
           "& .MuiDrawer-paper": {
-            width: drawerWidth,
+             width: "16%",
             boxSizing: "border-box",
           },
         }}
@@ -83,7 +76,12 @@ const SideNav = () => {
         anchor="left"
       >
         <List className="text-white">
-          <ListItem component={Link} to="/" button className="font-semibold text-lg">
+          <ListItem
+            component={Link}
+            to="/"
+            button
+            className="font-semibold text-lg"
+          >
             <h1>TMS</h1>
           </ListItem>
           <SubMenu />

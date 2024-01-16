@@ -1,10 +1,16 @@
 .main-container{
-    display: grid;
-    grid-template-columns: 240px 1fr;
+    /* display: grid;
+    grid-template-columns: 240px 1fr; */
+    display: flex;
+    width: 100%;
 }
 .sideNav-container{
     position: static;
     z-index: 2;
+    width: 16%;
+}
+.content-container{
+    width: 84%;
 }
 
 .top-nav{
@@ -14,9 +20,12 @@
     background-color: #343a40;
     box-shadow: 0 4px 7px #0000000f;
     padding: 7px 20px;
-    position: static;
+    position: fixed;
+    width: 100%;
 }
 
 .content-layout{
     height: calc(100vh - 60px);
+    padding: 20px;
+    margin-top: 60px;
 }
