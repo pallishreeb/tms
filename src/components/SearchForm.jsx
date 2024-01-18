@@ -394,7 +394,6 @@ const SearchForm = () => {
                     <div className="row flex gap-4 text-center mb-5">
                       <div className=" w-32 text-right">
                         <label className="col-form-label col-md-4 text-right text-[14px]">
-                          {" "}
                           Company
                         </label>
                       </div>
