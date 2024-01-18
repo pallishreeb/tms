@@ -18,7 +18,7 @@ const SearchForm = () => {
         <div>
           <h2 className="text-3xl mt-1 font-medium">Shipment Search</h2>
         </div>
-        <div className="flex justify-between  w-[54%]">
+        <div className="flex justify-between  w-[60%]">
           <div>
             <button className="bg-gray-200 border-solid border-t border-l border-b  border-neutral-300 py-1.5 px-3 rounded-l">
               Saved Searches
@@ -39,12 +39,12 @@ const SearchForm = () => {
         <div className="card-body ">
           <form className=" card-text">
             {/* first row */}
-            <div className="row flex gap-3">
+            <div className="row flex px-1 ">
               {/* first col */}
-              <div className="">
-                <div className="row flex gap-6 text-center mb-5">
-                  <div className=" w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+              <div className="ml-[-1%]">
+                <div className="row flex gap-4 text-center mb-5">
+                  <div className=" w-[26%] text-right">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Carrier
                     </label>
@@ -52,15 +52,15 @@ const SearchForm = () => {
 
                   <div className="col-md-8">
                     <input
-                      className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                      className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                       type="text"
                       placeholder="type to search carriers..."
                     />
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
-                  <div className="w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                <div className="row flex gap-4 text-center mb-5">
+                  <div className="w-[26%] text-right">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Office
                     </label>
@@ -68,15 +68,15 @@ const SearchForm = () => {
 
                   <div className="col-md-8">
                     <input
-                      className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                      className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                       type="text"
                       placeholder="type to search office..."
                     />
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
-                  <div className="w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                <div className="row flex gap-4 text-center mb-5">
+                  <div className="w-[90px] text-right">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Customer
                     </label>
@@ -84,15 +84,15 @@ const SearchForm = () => {
 
                   <div className="col-md-8">
                     <input
-                      className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                      className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                       type="text"
                       placeholder="type to search customers..."
                     />
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
-                  <div className=" w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                <div className="row flex gap-4 text-center mb-5">
+                  <div className=" w-[26%] text-right">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Assignment
                     </label>
@@ -100,7 +100,7 @@ const SearchForm = () => {
                   <div className="border-solid border border-neutral-300  bg-gray-100 rounded">
                     <select
                       name="shipmentFavoritedByType"
-                      className="form-control w-64 h-8 px-4 bg-gray-100 focus:border-blue-500"
+                      className="form-control w-60 h-8 px-4 bg-gray-100 focus:border-blue-500"
                     >
                       <option value="" selected="selected">
                         {" "}
@@ -115,9 +115,9 @@ const SearchForm = () => {
                 </div>
                 {showAdvanced && (
                   <>
-                    <div className="row flex gap-6 text-center mb-5">
-                      <div className=" w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                    <div className="row flex gap-4 text-center mb-5">
+                      <div className="w-[26%] text-right">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Date Type
                         </label>
@@ -125,7 +125,7 @@ const SearchForm = () => {
                       <div className=" rounded">
                         <select
                           name="shipmentFavoritedByType"
-                          className="form-control w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 focus:border-blue-500"
+                          className="form-control w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 focus:border-blue-500"
                         >
                           <option value="" selected="selected">
                             {" "}
@@ -137,9 +137,9 @@ const SearchForm = () => {
                         </select>
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
-                      <div className=" w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                    <div className="row flex gap-4 text-center mb-5">
+                      <div className="w-[26%] text-right">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Sales Person
                         </label>
@@ -147,7 +147,7 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                           placeholder="type to search"
                         />
@@ -157,10 +157,10 @@ const SearchForm = () => {
                 )}
               </div>
               {/* second colu */}
-              <div className="">
-                <div className="row flex gap-6 text-center mb-5">
+              <div className="ml-[-1%]">
+                <div className="row flex gap-4 text-center mb-5">
                   <div className=" w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Shipment IDs
                     </label>
@@ -168,21 +168,21 @@ const SearchForm = () => {
 
                   <div className="col-md-8">
                     <input
-                      className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                      className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                       type="text"
                     />
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
+                <div className="row flex gap-4 text-center mb-5">
                   <div className=" w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       Shipment Type
                     </label>
                   </div>
                   <div className="border-solid border border-neutral-300  bg-gray-100 rounded">
                     <select
                       name="shipmentFavoritedByType"
-                      className="form-control w-64 h-8 px-4 bg-gray-100 focus:border-blue-500"
+                      className="form-control w-60 h-8 px-4 bg-gray-100 focus:border-blue-500"
                     >
                       <option value="" selected="selected">
                         {" "}
@@ -199,9 +199,9 @@ const SearchForm = () => {
                     </select>
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
+                <div className="row flex gap-4 text-center mb-5">
                   <div className="w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Status
                     </label>
@@ -209,7 +209,7 @@ const SearchForm = () => {
                   <div className="border-solid border border-neutral-300  bg-gray-100 rounded">
                     <select
                       name="shipmentFavoritedByType"
-                      className="form-control w-64 h-8 px-4 bg-gray-100 focus:border-blue-500"
+                      className="form-control w-60 h-8 px-4 bg-gray-100 focus:border-blue-500"
                     >
                       <option value="" selected="selected">
                         -- Select --{" "}
@@ -227,9 +227,9 @@ const SearchForm = () => {
                     </select>
                   </div>
                 </div>
-                <div className="row flex gap-6 text-center mb-5">
+                <div className="row flex gap-4 text-center mb-5">
                   <div className=" w-32 text-right">
-                    <label className="col-form-label col-md-4 text-right text-sm">
+                    <label className="col-form-label col-md-4 text-right text-[14px]">
                       {" "}
                       Alerts
                     </label>
@@ -237,7 +237,7 @@ const SearchForm = () => {
                   <div className="border-solid border border-neutral-300  bg-gray-100 rounded">
                     <select
                       name="shipmentFavoritedByType"
-                      className="form-control w-64 h-8 px-4  bg-gray-100 focus:border-blue-500"
+                      className="form-control w-60 h-8 px-4  bg-gray-100 focus:border-blue-500"
                     >
                       <option value="" selected="selected">
                         -- Select --{" "}
@@ -251,9 +251,9 @@ const SearchForm = () => {
                 </div>
 
                 {showAdvanced && (
-                  <div className="row flex gap-6 text-center mb-5">
+                  <div className="row flex gap-4 text-center mb-5">
                     <div className=" w-32 text-right">
-                      <label className="col-form-label col-md-4 text-right text-sm">
+                      <label className="col-form-label col-md-4 text-right text-[14px]">
                         {" "}
                         Date Range
                       </label>
@@ -261,7 +261,7 @@ const SearchForm = () => {
                     <div className="border-solid border border-neutral-300  bg-gray-100 rounded">
                       <select
                         name="shipmentFavoritedByType"
-                        className="form-control w-64 h-8 px-4  bg-gray-100 focus:border-blue-500"
+                        className="form-control w-60 h-8 px-4  bg-gray-100 focus:border-blue-500"
                       >
                         <option value="">Next 7 days</option>
                         <option value="">Next 14 days</option>
@@ -288,46 +288,46 @@ const SearchForm = () => {
                 )}
               </div>
               {/* thrid col */}
-              <div className="mt-1 mr-6 ml-5  ">
+              <div className="mt-1 mr-8 ml-8  ">
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Guaranteed Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     White Glove Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Insured Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Hot Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Marketplace Only
                   </label>
                 </div>
                 {showAdvanced && (
-                  <div className="form-check mt-12 ">
+                  <div className="form-check mt-11 ">
                     <input
-                      className=" w-36 border-solid border border-neutral-300  bg-gray-100 px-2  rounded mt-1"
+                      className=" w-32 text-sm border-solid border border-neutral-300  bg-gray-100 px-2  rounded mt-1"
                       type="date"
                     />
                   </div>
@@ -336,44 +336,45 @@ const SearchForm = () => {
               {/* fourth col */}
               <div className="mt-1">
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Active Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Search Hierarchy
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Over Credit Limit Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     Volume Only
                   </label>
                 </div>
                 <div className="form-check mb-3">
-                  <input className="form-check-input mr-2" type="checkbox" />
-                  <label className="form-check-label ml-3 text-sm">
+                  <input className="form-check-input mr-1" type="checkbox" />
+                  <label className="form-check-label ml-3 text-[14px]">
                     {" "}
                     No POD Only
                   </label>
                 </div>
+
                 {showAdvanced && (
-                  <div className="form-check mt-12">
+                  <div className="form-check mt-11 ">
                     <input
-                      className=" w-36 border-solid border border-neutral-300  bg-gray-100 px-2 rounded mt-1"
+                      className=" w-32 text-sm border-solid border border-neutral-300  bg-gray-100 px-2  rounded mt-1"
                       type="date"
                     />
                   </div>
@@ -390,9 +391,9 @@ const SearchForm = () => {
                     <div className="border-b-2"></div>
                   </div>
                   <div className="mt-2">
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className=" w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Company
                         </label>
@@ -400,14 +401,14 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className="w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Zip Code
                         </label>
@@ -415,7 +416,7 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
@@ -423,14 +424,14 @@ const SearchForm = () => {
                   </div>
                 </div>
                 <div className="w-1/3">
-                  <div className="ml-4">
+                  <div className="ml-1">
                     <h1 className="text-2xl">Shipment Information</h1>
                     <div className="border-b-2"></div>
                   </div>
                   <div className="mt-2">
-                    <div className="row flex gap-6 text-center mb-5">
-                      <div className=" w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                    <div className="row flex gap-4 text-center mb-5">
+                      <div className=" w-[120px] text-right">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Reference Type
                         </label>
@@ -448,9 +449,9 @@ const SearchForm = () => {
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className=" w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           PRO Numbers
                         </label>
@@ -458,14 +459,14 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className="w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Customer PO
                         </label>
@@ -473,14 +474,14 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className="w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Shipper Ref
                         </label>
@@ -488,14 +489,14 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className="w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Tariff Name
                         </label>
@@ -503,14 +504,14 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <input
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         />
                       </div>
                     </div>
-                    <div className="row flex gap-6 text-center mb-5">
+                    <div className="row flex gap-4 text-center mb-5">
                       <div className="w-32 text-right">
-                        <label className="col-form-label col-md-4 text-right text-sm">
+                        <label className="col-form-label col-md-4 text-right text-[14px]">
                           {" "}
                           Service Level
                         </label>
@@ -518,7 +519,7 @@ const SearchForm = () => {
 
                       <div className="col-md-8">
                         <select
-                          className="w-64 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
+                          className="w-60 h-8 px-4 border-solid border border-neutral-300  bg-gray-100 rounded focus:border-blue-500"
                           type="text"
                         >
                           <option>--Select--</option>
@@ -531,9 +532,9 @@ const SearchForm = () => {
             )}
 
             {/* third row */}
-            <div className="flex row justify-between text-center px-10 mb-4">
+            <div className="flex row justify-between text-center px-8 mb-4">
               <div className="flex items-center">
-                <p className="text-sm text-center">
+                <p className="text-[14px] text-center">
                   Shipments shown for last
                   <span className="text-blue-500 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:cursor-pointer ml-1">
                     Last 90 Days
@@ -546,7 +547,7 @@ const SearchForm = () => {
                   </span>
                 </p>
               </div>
-              <div className="flex justify-between items-center w-7/12 ">
+              <div className="flex justify-between items-center w-[60%] ">
                 <div className="flex items-center space-x-1">
                   <span className="text-blue-500  hover:cursor-pointer">
                     <FileDownloadIcon className="w-6 h-6" />

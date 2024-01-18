@@ -23,6 +23,7 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import CheckCall from "./CheckCall";
 import ActivityLog from "./ActivityLog";
+import CarrierModal from "../CarrierModal";
 const DataTable = ({ data }) => {
   const [isCheckCallModalOpen, setCheckCallModalOpen] = useState(false);
   const [isActivityLogOpen, setActivityLogOpen] = useState(false);
@@ -240,6 +241,7 @@ const DataTable = ({ data }) => {
                 <td className="p-1 sm:p-2 whitespace-nowrap">{row.toState}</td>
                 <td className="p-1 sm:p-2 whitespace-nowrap text-blue-500 flex items-center cursor-pointer">
                   <FaTruck /> {row.carrierName}
+                  {/* <CarrierModal /> */}
                 </td>
                 <td className="p-1 sm:p-2 whitespace-nowrap">
                   {row.linehaulCarrierProNumber}
